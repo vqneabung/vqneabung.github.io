@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1>Information</h1>
-    <form>
+    <form id="myForm">
       <div>
         <label for="name">Name</label>
         <input
@@ -38,16 +38,43 @@
         />
       </div>
       <br />
-      <div style="display: flex">
-        <label for="message">Message </label>
+      <div style="display: block">
+        <label for="message" style="margin-right: 2%;">Message</label>
         <textarea
           name="message"
           id="message"
           cols="30"
           rows="10"
           placeholder="Enter your message"
+          style="display: block;"
         ></textarea>
       </div>
+      <br>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
     </form>
+
+    <div id="userInfo"></div>
+
+    <script>
+      document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Ngăn chặn form submit mặc định
+
+        // Lấy giá trị từ các trường input
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var message = document.getElementById("message").value;
+
+        // Hiển thị thông tin người dùng
+        var userInfo = document.getElementById("userInfo");
+        userInfo.innerHTML = "<h2>User Information:</h2>" +
+          "<p><strong>Name:</strong> " + name + "</p>" +
+          "<p><strong>Email:</strong> " + email + "</p>" +
+          "<p><strong>Phone:</strong> " + phone + "</p>" +
+          "<p><strong>Message:</strong> " + message + "</p>";
+      });
+    </script>
   </body>
 </html>
