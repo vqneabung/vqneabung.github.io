@@ -26,7 +26,7 @@ h3{
     margin: 0 10%;
 }
 
-nav.choice{
+.choice{
     background-color: yellow;
     height: 50px;
     display: flex;
@@ -34,13 +34,13 @@ nav.choice{
     justify-content: space-evenly;
 }
 
-p.introduction{
+.introduction{
     text-align: center;
     padding: 2% 2%;
     font-size: 30px;
 }
 
-div.block{
+.block{
     background-color: gold;
     height: auto;
     padding: 2% 2%;
