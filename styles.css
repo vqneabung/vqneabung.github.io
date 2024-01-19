@@ -25,3 +25,25 @@ h3{
     display: inline-block;
     margin: 0 10%;
 }
+
+nav.choice{
+    background-color: yellow;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+p.introduction{
+    text-align: center;
+    padding: 2% 2%;
+    font-size: 30px;
+}
+
+div.block{
+    background-color: gold;
+    height: auto;
+    padding: 2% 2%;
+
+
+}
