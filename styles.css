@@ -47,13 +47,34 @@ h3{
     padding: 2% 2%;
 }
 
-.skipContent {
+
+.skip-to-main-content-link:link {
   position: absolute;
-  left: 0;
-  background: #000;
-  color: #fff;
-  padding: 8px;
-  transition: top 0.3s;
+  left: 0px;
+  z-index: 1;
+  padding: 1em;
+  background-color: wheat;
+  color: white;
+}
+
+
+
+.skip-to-main-content-link:hover {
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+  padding: 1em;
+  background-color: grey;
+  color: white;
+}
+
+.skip-to-main-content-link:active {
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+  padding: 1em;
+  background-color: whitesmoke;
+  color: black;
 }
 
 .pictures{
