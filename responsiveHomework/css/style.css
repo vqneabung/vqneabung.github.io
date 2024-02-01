@@ -41,34 +41,33 @@ div {
   padding: 2px;
 }
 
-@media screen and (min-width: 772px) {
+/*The first media query should trigger at 772px and change the layout of the divs to be 45% of the viewport width. The images should have a maximum height of 30% of the viewport height.*/
+
+@media screen and (max-width: 772px) {
   div {
-    width: 45%;
-    max-height: 30%;
+    width: 40vw;
+    margin: auto;
+    display: block;
+  }
+
+  div img {
+    height: 30vh;
+    display: block;
   }
 }
 
-@media screen and (min-width: 998px) {
-    div{
-        width: 30%;
-    }
-    
-}
+/*The second media query should trigger at 998px and change the layout of the divs to be 30% of the viewport width.*/
+@media screen and (max-width: 998px) {
+  div {
+    width: 30vw;
+    margin: auto;
+    display: block;
+  }
 
-/* 
-main {
-    border: 5px #000 solid;
-    margin: 10px;
+  div {
+    width: 30%;
+  }
 }
- */
-/* 
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
- */
 /* img{
     width: 200px;
     height: 200px;
