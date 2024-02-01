@@ -41,7 +41,7 @@ div {
   padding: 2px;
 }
 
-@media screen and (max-width: 772px) {
+@media screen and (min-width: 772px) {
   div {
     width: 40vw;
     margin: auto;
@@ -53,14 +53,14 @@ div {
   }
 }
 
-@media screen and (max-width: 998px) {
+@media screen and (min-width: 998px) {
   div {
-    width: 30vw;
+    width: 45vw;
     margin: auto;
     display: inline-block;
   }
   div img {
-    height: 30vh;
+    width: 30vw;
     display: block;
   }
 }
